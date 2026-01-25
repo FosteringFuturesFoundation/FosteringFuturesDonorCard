@@ -1,219 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fostering Futures Foundation – Donor Pledge</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #f7f7fb;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    .container {
-      max-width: 520px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .card {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-    h1 {
-      font-size: 22px;
-      text-align: center;
-      margin: 0 0 10px;
-      color: #4B3F72;
-    }
-    .mission {
-      font-size: 14px;
-      text-align: center;
-      color: #666;
-      margin-bottom: 18px;
-    }
-    label {
-      display: block;
-      font-weight: 600;
-      margin: 14px 0 6px;
-      font-size: 14px;
-    }
-    input, select {
-      width: 100%;
-      padding: 12px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-    .options {
-      margin-top: 10px;
-    }
-    .option {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-    .option input[type="radio"] {
-      width: auto;
-      margin-right: 10px;
-    }
-    .note {
-      font-size: 13px;
-      color: #666;
-      margin-top: 14px;
-      line-height: 1.35;
-    }
-    .submit {
-      margin-top: 18px;
-      background: #4B3F72;
-      color: #fff;
-      border: none;
-      padding: 14px;
-      border-radius: 12px;
-      font-size: 16px;
-      font-weight: 600;
-      width: 100%;
-      cursor: pointer;
-    }
-    .footer {
-      font-size: 12px;
-      color: #777;
-      margin-top: 18px;
-      text-align: center;
-      line-height: 1.35;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fostering Futures Donor Pledge Card</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ffd86b,#f5b700);
+  margin:0;
+  padding:0;
+}
+
+.container {
+  max-width: 600px;
+  margin:auto;
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+.logo {
+  text-align:center;
+}
+
+.logo img {
+  width:100%;
+  max-width:260px;
+}
+
+h1 {
+  text-align:center;
+  color:#b88600;
+}
+
+label {
+  font-weight:bold;
+  display:block;
+  margin-top:15px;
+}
+
+input, select, textarea {
+  width:100%;
+  padding:10px;
+  margin-top:6px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+button {
+  background:#f5b700;
+  color:white;
+  border:none;
+  padding:14px;
+  width:100%;
+  font-size:18px;
+  border-radius:10px;
+  margin-top:20px;
+  cursor:pointer;
+}
+
+button:hover {
+  background:#d49a00;
+}
+
+.note {
+  font-size:13px;
+  margin-top:15px;
+  color:#555;
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="card">
 
-      <div style="text-align:center;margin-bottom:14px;">
-        <img
-          src="Logo.jpg"
-          alt="Fostering Futures Foundation Logo"
-          style="max-width:120px;width:100%;height:auto;border-radius:8px;"
-        />
-      </div>
+<div class="container">
 
-      <h1>Fostering Futures Foundation</h1>
+<div class="logo">
+<img src="Logo.jpg">
+</div>
 
-      <div class="mission">
-        Mentorship • Scholarships • Therapeutic Writing
-      </div>
+<h1>Donor Pledge Card</h1>
 
-      <label>Choose Your Pledge</label>
-      <div class="options">
-        <div class="option">
-          <input type="radio" name="pledge" value="Bi-Weekly – $41.50" />
-          Bi-Weekly – $41.50
-        </div>
-        <div class="option">
-          <input type="radio" name="pledge" value="Monthly – $83" />
-          Monthly – $83
-        </div>
-        <div class="option">
-          <input type="radio" name="pledge" value="Quarterly – $332" />
-          Quarterly – $332
-        </div>
-        <div class="option">
-          <input type="radio" name="pledge" value="One-Time" />
-          One-Time Gift – $
-          <input id="oneTimeAmount" inputmode="decimal"
-            style="width:140px;margin-left:6px;padding:8px;border-radius:10px;border:1px solid #ccc;font-size:16px;"
-            placeholder="Enter amount"
-          />
-        </div>
-      </div>
+<form>
 
-      <label>Your Information</label>
-      <input id="fullName" type="text" placeholder="Full Name" required />
-      <input id="email" type="email" placeholder="Email Address" style="margin-top:10px" required />
-      <input id="phone" type="tel" placeholder="Phone (optional)" style="margin-top:10px" />
+<label>Full Name</label>
+<input type="text">
 
-      <label>Available Payment Methods</label>
-      <select id="paymentMethod">
-        <option>Check (Payable to: Fostering Futures Foundation A NJ Nonprofit)</option>
-        <option>Zelle – Fosteringfuturesfoundationinc@gmail.com</option>
-        <option>Cash App – $FosteringFuturesF</option>
-      </select>
+<label>Email</label>
+<input type="email">
 
-      <button class="submit" type="button" onclick="submitPledge()">Email Pledge Confirmation</button>
+<label>Phone</label>
+<input type="tel">
 
-      <p class="note">
-        This pledge must be paid by the donor using one of the available payment methods listed above.
-Electronic pledge payment directly through this form will be available when our website is live.
-      </p>
+<label>Giving Level</label>
+<select>
+<option>$50 Supporter</option>
+<option>$100 Friend</option>
+<option>$250 Sponsor</option>
+<option>$500 Scholarship Sponsor</option>
+<option>$1000+ Champion</option>
+</select>
 
-      <div id="status" class="note" style="display:none;"></div>
+<label>Payment Method</label>
+<select>
+<option>Zelle</option>
+<option>Cash App</option>
+<option>PayPal</option>
+<option>Check</option>
+</select>
 
-      <div class="footer">
-        Checks payable to: Fostering Futures Foundation A NJ Nonprofit<br/>
-        C/O Cheryl Slaughter-Hurst • 9 Brownstone Way, Suite 101A • Englewood, NJ 07631
-      </div>
-    </div>
-  </div>
+<label>Message (optional)</label>
+<textarea rows="3"></textarea>
 
-  <script>
-    const PLEDGE_EMAIL_TO = "Fosteringfuturesfoundationinc@gmail.com";
+<button type="submit">Submit Pledge</button>
 
-    function getSelectedPledge() {
-      const selected = document.querySelector('input[name="pledge"]:checked');
-      if (!selected) return null;
+<p class="note">
+Checks payable to:<br>
+<strong>Fostering Futures Foundation A NJ Nonprofit</strong><br><br>
+This pledge must be paid using one of the available payment methods listed above.  
+Electronic pledge payment directly from this form will be available when the website is live.
+</p>
+</form>
 
-      if (selected.value === "One-Time") {
-        const amt = (document.getElementById('oneTimeAmount').value || "").trim();
-        return amt ? `One-Time – $${amt}` : "One-Time";
-      }
-      return selected.value;
-    }
+</div>
 
-    function showStatus(msg, isError=false) {
-      const el = document.getElementById('status');
-      el.style.display = 'block';
-      el.style.color = isError ? '#b00020' : '#2e7d32';
-      el.textContent = msg;
-    }
-
-    function submitPledge() {
-      const name = (document.getElementById('fullName').value || "").trim();
-      const email = (document.getElementById('email').value || "").trim();
-      const phone = (document.getElementById('phone').value || "").trim();
-      const payment = (document.getElementById('paymentMethod').value || "").trim();
-      const pledge = getSelectedPledge();
-
-      if (!pledge) return showStatus("Please select a pledge option.", true);
-      if (!name) return showStatus("Please enter your full name.", true);
-      if (!email) return showStatus("Please enter your email address.", true);
-      if (!email.includes('@') || !email.includes('.')) return showStatus("Please enter a valid email address.", true);
-
-      const subject = encodeURIComponent("Fostering Futures Foundation – Donor Pledge");
-      const lines = [
-        "DONOR PLEDGE",
-        "",
-        `Pledge: ${pledge}`,
-        `Payment Method: ${payment}`,
-        "",
-        "Donor Information:",
-        `Name: ${name}`,
-        `Email: ${email}`,
-        phone ? `Phone: ${phone}` : "Phone: (not provided)",
-        "",
-        "Checks payable to: Fostering Futures Foundation A NJ Nonprofit",
-        "Mailing Address: C/O Cheryl Slaughter-Hurst, 9 Brownstone Way, Suite 101A, Englewood, NJ 07631",
-        "Zelle: Fosteringfuturesfoundationinc@gmail.com",
-        "Cash App: $FosteringFuturesF"
-      ];
-
-      const body = encodeURIComponent(lines.join("\n"));
-      window.location.href = `mailto:${PLEDGE_EMAIL_TO}?subject=${subject}&body=${body}`;
-      showStatus("Your email draft is ready. Please tap ‘Send’ to submit your pledge.", false);
-    }
-  </script>
 </body>
 </html>
